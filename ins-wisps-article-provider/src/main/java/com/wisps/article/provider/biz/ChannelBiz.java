@@ -1,6 +1,6 @@
 package com.wisps.article.provider.biz;
 
-import com.wisps.article.provider.vo.ChannelVo;
+import com.wisps.article.provider.vo.resp.ChannelVo;
 
 import java.util.List;
 
