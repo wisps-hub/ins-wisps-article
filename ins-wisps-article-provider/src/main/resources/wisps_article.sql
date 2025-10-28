@@ -9,6 +9,11 @@ CREATE TABLE `d1`.`article_channel` (
     PRIMARY KEY (`id`)
 ) COMMENT='文章频道表';
 
+INSERT INTO d1.article_channel (id, channel_name, level_code, uid, oid, createtime, modifytime) VALUES (1, 'java', 1, 2, 0, '2025-10-21 14:09:30', '2025-10-21 14:09:30');
+INSERT INTO d1.article_channel (id, channel_name, level_code, uid, oid, createtime, modifytime) VALUES (2, '阴阳术士', 1, 2, 0, '2025-10-21 14:09:30', '2025-10-21 14:09:30');
+INSERT INTO d1.article_channel (id, channel_name, level_code, uid, oid, createtime, modifytime) VALUES (3, '钢铁卡巴内瑞', 1, 2, 0, '2025-10-21 14:09:30', '2025-10-21 14:09:30');
+INSERT INTO d1.article_channel (id, channel_name, level_code, uid, oid, createtime, modifytime) VALUES (4, '三个方法', 1, 2, 0, '2025-10-21 14:09:30', '2025-10-21 14:09:30');
+
 CREATE TABLE `d1`.`article` (
     `id` bigint unsigned NOT NULL AUTO_INCREMENT COMMENT 'ID（自增主键）',
     `title` varchar(255) DEFAULT NULL COMMENT '名称',
@@ -24,6 +29,16 @@ CREATE TABLE `d1`.`article` (
     `modifytime` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT '更新时间',
     PRIMARY KEY (`id`)
 ) COMMENT='文章表';
+
+INSERT INTO d1.article (id, title, content, channel_id, cover_type, images, status, pub_time, uid, oid, createtime, modifytime) VALUES (2, '钢铁', 'gggggggg', 2, 0, null, 1, '2025-10-22 19:37:36', 2, 0, '2025-10-22 09:35:54', '2025-10-22 12:15:19');
+INSERT INTO d1.article (id, title, content, channel_id, cover_type, images, status, pub_time, uid, oid, createtime, modifytime) VALUES (3, '阴阳风水录', 'yyyyyyy', 3, 0, null, 2, '2025-10-08 19:37:43', 2, 0, '2025-10-22 09:35:54', '2025-10-22 12:15:19');
+INSERT INTO d1.article (id, title, content, channel_id, cover_type, images, status, pub_time, uid, oid, createtime, modifytime) VALUES (4, '笋干辣条', 'ssssss', 4, 0, null, 3, '2025-10-19 19:37:56', 2, 0, '2025-10-22 09:36:38', '2025-10-22 12:15:19');
+INSERT INTO d1.article (id, title, content, channel_id, cover_type, images, status, pub_time, uid, oid, createtime, modifytime) VALUES (5, 'x考试', 'xxxxxx', 1, 0, null, 0, '2025-10-19 19:38:02', 2, 0, '2025-10-22 09:36:38', '2025-10-22 12:15:19');
+INSERT INTO d1.article (id, title, content, channel_id, cover_type, images, status, pub_time, uid, oid, createtime, modifytime) VALUES (6, '89898', '99999999', 1, 3, 'https://inews.gtimg.com/news_bt/OBkbmPLeWLy4IM4oUDGvOIqSDSZ9lYOtW3qSXCYh78KXcAA/1000,https://inews.gtimg.com/news_bt/OBkbmPLeWLy4IM4oUDGvOIqSDSZ9lYOtW3qSXCYh78KXcAA/1000', 2, '2025-10-04 19:38:07', 2, 0, '2025-10-22 09:39:15', '2025-10-22 13:25:58');
+INSERT INTO d1.article (id, title, content, channel_id, cover_type, images, status, pub_time, uid, oid, createtime, modifytime) VALUES (7, '密码学', 'mmmmmmmmm', 1, 0, null, 3, '2025-10-10 19:38:14', 2, 0, '2025-10-22 09:39:15', '2025-10-22 12:15:19');
+INSERT INTO d1.article (id, title, content, channel_id, cover_type, images, status, pub_time, uid, oid, createtime, modifytime) VALUES (8, 'java精选', 'jjjjjjj', 2, 0, null, 2, '2025-10-12 19:38:21', 2, 0, '2025-10-22 09:39:15', '2025-10-22 12:15:19');
+INSERT INTO d1.article (id, title, content, channel_id, cover_type, images, status, pub_time, uid, oid, createtime, modifytime) VALUES (10, '唐三彩', 'tttttt', 3, 0, null, 2, '2025-10-14 19:38:33', 2, 0, '2025-10-22 09:39:16', '2025-10-22 12:15:19');
+
 
 CREATE TABLE `d1`.`article_read` (
     `id` bigint unsigned NOT NULL AUTO_INCREMENT COMMENT 'ID（自增主键）',
@@ -58,3 +73,4 @@ CREATE TABLE `d1`.`article_like` (
     `modifytime` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT '更新时间',
     PRIMARY KEY (`id`)
 ) COMMENT='点赞表';
+
