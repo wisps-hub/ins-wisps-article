@@ -1,4 +1,4 @@
-package com.wisps.article.provider.vo;
+package com.wisps.article.provider.vo.resp;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

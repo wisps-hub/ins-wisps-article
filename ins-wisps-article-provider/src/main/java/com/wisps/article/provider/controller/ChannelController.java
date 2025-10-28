@@ -1,11 +1,12 @@
 package com.wisps.article.provider.controller;
 
 import com.wisps.article.provider.biz.ChannelBiz;
-import com.wisps.article.provider.vo.ChannelVo;
+import com.wisps.article.provider.vo.resp.ChannelVo;
 import com.wisps.controller.BaseController;
 import com.wisps.resp.Result;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 

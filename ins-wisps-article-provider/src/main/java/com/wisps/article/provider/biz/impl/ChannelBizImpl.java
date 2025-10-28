@@ -6,7 +6,7 @@ import com.google.common.collect.Lists;
 import com.wisps.article.provider.biz.ChannelBiz;
 import com.wisps.article.provider.entity.ChannelEntity;
 import com.wisps.article.provider.mapping.dao.ChannelDao;
-import com.wisps.article.provider.vo.ChannelVo;
+import com.wisps.article.provider.vo.resp.ChannelVo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.util.CollectionUtils;
